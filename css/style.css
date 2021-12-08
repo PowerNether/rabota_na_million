@@ -63,6 +63,7 @@ body {
 .firstscreen {
   min-height: 100vh;
   background: #ffffff;
+  position: relative;
 }
 
 .banner-image {
@@ -89,6 +90,68 @@ body {
   line-height: 24px;
   color: #000000;
   margin-bottom: 10px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: none;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  -webkit-mask: url("./../image/chevron-down.svg") center/cover no-repeat;
+          mask: url("./../image/chevron-down.svg") center/cover no-repeat;
+  background: #009fe3;
+  -webkit-animation: scroller 1s infinite linear;
+          animation: scroller 1s infinite linear;
+}
+
+@-webkit-keyframes scroller {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  25% {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes scroller {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  25% {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .link {
@@ -184,6 +247,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .scroll {
+    display: block;
+  }
   .role-image {
     padding: 0 5px;
   }

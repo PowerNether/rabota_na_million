@@ -12,6 +12,7 @@ body
 .firstscreen
     min-height: 100vh
     background: #ffffff
+    position: relative
 
 .banner
     &-image
@@ -35,6 +36,32 @@ body
     line-height: 24px;
     color: #000000;
     margin-bottom: 10px
+
+.scroll
+    position: absolute
+    bottom: 10px
+    left: 0
+    right: 0
+    display: none
+    margin: 0 auto
+    width: 24px;
+    height: 24px;
+    mask: url('./../image/chevron-down.svg') center / cover no-repeat
+    background: #009fe3
+    animation: scroller 1s infinite linear
+
+@keyframes scroller
+    0%
+        transform: translateY(0%)
+    25%
+        transform: translateY(-5%)
+    50%
+        transform: translateY(0%)
+    75%
+        transform: translateY(5%)
+    100%
+        transform: translateY(0%)
+        
 
 .link
     font-size: 16px;
@@ -101,6 +128,8 @@ body
         height: auto
 
 @media screen and (max-width: 768px)
+    .scroll
+        display: block
     .role
         &-image
             padding: 0 5px
