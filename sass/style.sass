@@ -1,0 +1,101 @@
+@import ./_reset
+
+body
+    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+    background-color: #0D1525;
+
+.wrapper
+    width: 100%
+    max-width: 600px
+    margin: 0 auto
+
+.banner
+    &-image
+        display: block
+        width: 100%
+        height: auto
+
+.content
+    padding: 20px 20px 10px
+    background: #ffffff
+
+.title
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+    margin-bottom: 10px
+
+.text
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 10px
+
+.link
+    font-size: 16px;
+    line-height: 24px;
+    color: #009fe3;
+    &-btn
+        display: block
+        width: fit-content
+        padding: 10px 20px
+        margin: 0 auto 20px
+        border: 1px solid #009fe3
+        background: #ffffff
+        text-decoration: none
+        transition: background .35s, color .35s
+        &:hover
+            background: #009fe3
+            color: #ffffff
+            
+
+.link-block
+    margin-bottom: 10px
+    .link
+        font-weight: bold
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: uppercase
+    .link-desc
+        display: block
+        font-size: 14px;
+        line-height: 21px;
+        color: #666666;
+
+.role
+    &-header
+        padding: 10px 0 5px
+        background-color: rgb(0, 159, 227);
+        .title
+            color: #ffffff
+            text-transform: uppercase
+            text-align: center
+            margin: 0
+    &-list
+        display: flex
+        justify-content: space-around
+        margin-bottom: 10px
+    &-item
+        display: block
+    &-image
+        display: block
+        width: 100%
+        max-width: 120px
+        height: auto
+    &-text
+        font-style: italic
+        text-align: center
+
+.youtube
+    display: block
+    margin-bottom: 20px
+    &-image
+        display: block
+        width: 100%
+        height: auto
+
+@media screen and (max-width: 468px)
+    .role-list
+        flex-direction: column
+        align-items: center
