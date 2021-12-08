@@ -60,6 +60,11 @@ body {
   margin: 0 auto;
 }
 
+.firstscreen {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
 .banner-image {
   display: block;
   width: 100%;
