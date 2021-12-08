@@ -6,7 +6,7 @@ body
 
 .wrapper
     width: 100%
-    max-width: 600px
+    max-width: 1200px
     margin: 0 auto
 
 .banner
@@ -81,7 +81,8 @@ body
     &-image
         display: block
         width: 100%
-        max-width: 120px
+        max-width: 220px
+        padding: 0 10px;
         height: auto
     &-text
         font-style: italic
@@ -95,6 +96,10 @@ body
         width: 100%
         height: auto
 
+@media screen and (max-width: 668px)
+    .role
+        &-image
+            max-width: 140px
 @media screen and (max-width: 468px)
     .role-list
         flex-direction: column

@@ -56,7 +56,7 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -157,7 +157,8 @@ body {
 .role-image {
   display: block;
   width: 100%;
-  max-width: 120px;
+  max-width: 220px;
+  padding: 0 10px;
   height: auto;
 }
 
@@ -175,6 +176,12 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 668px) {
+  .role-image {
+    max-width: 140px;
+  }
 }
 
 @media screen and (max-width: 468px) {
