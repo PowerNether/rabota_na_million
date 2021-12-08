@@ -178,20 +178,14 @@ body {
   height: auto;
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
   .role-image {
-    max-width: 140px;
+    padding: 0 5px;
   }
 }
 
-@media screen and (max-width: 468px) {
-  .role-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media screen and (max-width: 668px) {
+  .role-image {
+    max-width: 140px;
   }
 }
